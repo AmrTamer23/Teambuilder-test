@@ -101,7 +101,7 @@ const Show = ({ product, products }) => {
               <div className=" text-secondary font-medium ">DETAILS:</div>
               <p className="w-2/3 text-lightGray"> {product.details}</p>
 
-              <div className=" my-4 text-2xl font-bold"> ${product.price} </div>
+              <div className=" my-4 text-2xl font-bold"> ¥{product.price.toLocaleString('ja-JP')} </div>
 
               {/* ==== QUANTITY SHOW  */}
               <div className="flex">
@@ -144,12 +144,12 @@ const Show = ({ product, products }) => {
                 Add to Cart
               </button>
 
-              <div
-                className=" text-center hover:scale-105 transition shadow-md cursor-pointer
+              <button
+                className="text-white text-center hover:scale-105 transition shadow-md cursor-pointer
                  bg-primary text-xl px-8 py-2  text-highLight ring-1 ring-primary"
               >
-                Buy Now
-              </div>
+                Buy now
+              </button>
             </div>
           </section>
         </div>
